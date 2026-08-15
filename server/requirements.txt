@@ -1,0 +1,22 @@
+fastapi==0.141.1
+hf-xet==1.6.0
+huggingface-hub==1.27.0
+httpx==0.28.1
+pydantic==2.13.4
+pytest==9.1.1
+tokenizers==0.22.2
+transformers==5.15.0
+uvicorn[standard]==0.52.3
+
+# Keep the tested MLX ABI and tokenizer/runtime layer fixed beneath both
+# speculative engines.
+mlx==0.32.0
+mlx-lm==0.31.3
+
+# Qwen3.8 model loading and native MTP support. Pin the reviewed release-candidate
+# commit because Qwen3.8 landed after mlx-vlm 0.6.13. This revision includes
+# the Qwen3.8 FP8 loader required by the 8-bit conversion.
+mlx-vlm @ git+https://github.com/Blaizzy/mlx-vlm.git@7b0c281055e483d83667f2fd62a2ca243657134a
+
+# Released Qwen3.8 DSpark implementation with hybrid-prefix caching.
+mlx-dspark @ git+https://github.com/ARahim3/mlx-dspark.git@9fd1ae0643706968f37b8a97a63b368a182eaa1a
