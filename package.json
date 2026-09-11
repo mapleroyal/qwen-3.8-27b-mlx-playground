@@ -1,5 +1,5 @@
 {
-  "name": "qwen-3.8-27b-playground",
+  "name": "qwen-3.8-27b-mlx-playground",
   "version": "1.0.0",
   "description": "Optimized local Qwen3.8-27B playground with DSpark and MTP for Apple silicon",
   "scripts": {

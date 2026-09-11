@@ -26,8 +26,8 @@ Requirements:
 Run:
 
 ```bash
-git clone https://github.com/mapleroyal/qwen-3.8-27b-playground.git
-cd qwen-3.8-27b-playground
+git clone https://github.com/mapleroyal/qwen-3.8-27b-mlx-playground.git
+cd qwen-3.8-27b-mlx-playground
 ./setup.sh
 ```
 
